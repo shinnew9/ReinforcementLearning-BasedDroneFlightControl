@@ -7,14 +7,19 @@ This repository contains an implementation of Proximal Policy Optimization (PPO)
 **Environment setup to run the codes**
 ## 1. Clone the repository 
 https://github.com/shinnew9/ReinforcementLearning-BasedDroneFlightControl
+<br>
+<br>
 
 ## 2.From Anaconda command prompt, create a new conda environment
 I recommend you to use Anaconda or Miniconda to create a virtual environment.
 conda create -n ppo_drone python==3.8
+<br>
+<br>
 
 ## 3.Install required libraries
 conda activate ppo_drone
 pip install -r requirements.txt
+<br>
 
 **How to run the pretrained model?**
 Make sure you followed the instructions above to setup the environment. To speed up the training, the simulation runs at 20x speed. You may consider to change the "ClockSpeed" parameter in settings.json to 1.
