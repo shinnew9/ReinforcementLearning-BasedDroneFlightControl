@@ -5,12 +5,14 @@ This repository contains an implementation of Proximal Policy Optimization (PPO)
 2.Microsoft AirSim
 
 **Environment setup to run the codes**
-# 1. Clone the repository 
+## 1. Clone the repository 
 https://github.com/shinnew9/ReinforcementLearning-BasedDroneFlightControl
-# 2.From Anaconda command prompt, create a new conda environment
+
+## 2.From Anaconda command prompt, create a new conda environment
 I recommend you to use Anaconda or Miniconda to create a virtual environment.
 conda create -n ppo_drone python==3.8
-# 3.Install required libraries
+
+## 3.Install required libraries
 conda activate ppo_drone
 pip install -r requirements.txt
 
