@@ -137,12 +137,12 @@ python policy_run.py
 ```bash
 tensorboard --logdir logs/tb_logs
 
-images/
+Images/
 
 
-videos/
+Videos/
 
-results/
+Results/
 
 
 
