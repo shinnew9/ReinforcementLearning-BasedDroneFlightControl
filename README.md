@@ -28,6 +28,7 @@ The system learns everything **end-to-end**:
 
 ---
 
+
 #  1. Installation
 
 ## Step 1 — Install Anaconda
@@ -205,8 +206,7 @@ All training plots are in `figures/`.
 
 Watch the trained drone policy navigating through wall openings:
 
-**TrainEnv.mp4** (see `videos/` folder)
-**TestEnv.mp4** (see `videos/` folder)
+![134464002-08cbab61-999c-461c-9098-befd0ff0f779](https://github.com/user-attachments/assets/4a799e09-bb4a-455e-8847-b143b3304837)
 
 The agent reliably performs:
 - short-range forward flight  
