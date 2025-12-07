@@ -215,9 +215,25 @@ The agent reliably performs:
 
 While long-horizon pixel-only navigation remains difficult, this experiment demonstrates that PPO can learn meaningful visuomotor behavior from extremely limited visual input.
 
+# 7. Results 
+
+Overall, the agent completed 150,000 timesteps of PPO training with periodic evaluation every 500 steps.
+Across training, the model achieved: 
+
+Across 150k timesteps, the agent demonstrated clear learning progress, with evaluation rewards rising above +120 at multiple checkpoints, indicating successful hole traversal and improved navigation performance.
+
+Improved alignment behavior
+
+More stable forward motion
+
+Intermittent successful passes through the opening
+
+Higher rewards toward later training iterations
+
+Although performance fluctuated due to noisy visual input, the PPO agent was able to learn meaningful visuomotor control policies.
 
 
-# 7. Limitations & Future Work
+# 8. Limitations & Future Work
 
 ### Limitations
 - No temporal modeling (agent sees only one frame at a time)
@@ -232,3 +248,5 @@ While long-horizon pixel-only navigation remains difficult, this experiment demo
 - Testing SAC, TD3, or Dreamer for improved sample efficiency  
 - Sim-to-real transfer on a physical quadrotor
 
+# Author 
+Santhoshi Karri
