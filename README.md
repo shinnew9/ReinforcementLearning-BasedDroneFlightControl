@@ -201,3 +201,33 @@ Airsim Drone Motion
 All training plots are in `figures/`.
 
 
+# 6. Demo Video
+
+Watch the trained drone policy navigating through wall openings:
+
+👉 **demo.mp4** (see `videos/` folder)
+
+The agent reliably performs:
+- short-range forward flight  
+- coarse alignment toward the opening  
+- collision avoidance in simple layouts  
+
+While long-horizon pixel-only navigation remains difficult, this experiment demonstrates that PPO can learn meaningful visuomotor behavior from extremely limited visual input.
+
+
+
+# 7. Limitations & Future Work
+
+### Limitations
+- No temporal modeling (agent sees only one frame at a time)
+- Low-resolution 50×50 images reduce spatial precision
+- Reward landscape dominated by collision penalties
+- Long-horizon drift leads to early failure
+
+### Future Work
+- Frame stacking or LSTM-based policies  
+- Higher-resolution cameras or multi-view inputs  
+- Curriculum learning across diverse wall layouts  
+- Testing SAC, TD3, or Dreamer for improved sample efficiency  
+- Sim-to-real transfer on a physical quadrotor
+
