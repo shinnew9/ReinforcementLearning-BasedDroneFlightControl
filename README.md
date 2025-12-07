@@ -205,7 +205,8 @@ All training plots are in `figures/`.
 
 Watch the trained drone policy navigating through wall openings:
 
-👉 **demo.mp4** (see `videos/` folder)
+**TrainEnv.mp4** (see `videos/` folder)
+**TestEnv.mp4** (see `videos/` folder)
 
 The agent reliably performs:
 - short-range forward flight  
