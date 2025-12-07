@@ -142,6 +142,7 @@ images/
 
 videos/
 
+results/
 
 
 
