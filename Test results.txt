@@ -1,0 +1,29 @@
+(ppo_drone) F:\RL Final\PPO-based-Autonomous-Navigation-for-Quadcopters-main>python policy_run.py                
+---------------------------------
+> Total episodes: 5
+> Flight distance (mean): 14.06
+> Holes reached (max): 5
+> Holes reached (mean): 3
+---------------------------------
+
+---------------------------------
+> Total episodes: 10
+> Flight distance (mean): 15.37
+> Holes reached (max): 5
+> Holes reached (mean): 3
+---------------------------------
+
+---------------------------------
+> Total episodes: 15
+> Flight distance (mean): 16.29
+> Holes reached (max): 9
+> Holes reached (mean): 4
+---------------------------------
+
+---------------------------------
+> Total episodes: 20
+> Flight distance (mean): 17.60
+> Holes reached (max): 9
+> Holes reached (mean): 4
+---------------------------------
+
