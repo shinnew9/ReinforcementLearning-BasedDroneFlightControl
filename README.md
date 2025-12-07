@@ -157,3 +157,47 @@ The PPO agent interacts with the AirSim Blocks environment through a Gym-like AP
 All training diagnostics (KL, entropy, clip fraction, explained variance, etc.)  
 are automatically logged in **TensorBoard**.
 
+
+
+# 4. Model Architecture
+
+The agent uses:
+
+- **CNN** for visual feature extraction  
+- **Actor network** → outputs 9 discrete body-frame velocity commands  
+- **Critic network** → estimates state value \( V(s) \)  
+- **PPO optimizer** → stable clipped policy updates  
+
+High-level pipeline:
+```bash
+RGB Image (50×50×3)
+↓
+CNN Encoder
+↓
+Actor Head → 9 actions
+Critic Head → V(s)
+↓
+Airsim Drone Motion
+```
+
+
+# 5. Results
+
+## 5.1 Episode Length
+- Converges to ~4–5 steps
+- Drone achieves basic short-range stability
+- Long-horizon navigation remains difficult
+
+## 5.2 Reward Trends
+- Mostly negative due to collision penalties
+- Reward curve becomes structured → PPO learns stable patterns
+
+## 5.3 PPO Diagnostics
+- KL divergence stabilizes → safe updates  
+- Clip fraction → near zero (convergence)  
+- Entropy decreases → policy becomes deterministic  
+- Explained variance → ~0.9 (critic improves)
+
+All training plots are in `figures/`.
+
+
