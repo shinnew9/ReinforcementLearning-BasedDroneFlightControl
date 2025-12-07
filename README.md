@@ -39,6 +39,7 @@ conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
 
 ## Step 3 - Install dependencies
+```bash
 pip install airsim
 pip install stable-baselines3[extra]
 pip install torch torchvision torchaudio
@@ -46,4 +47,99 @@ pip install opencv-python
 pip install tensorboard
 pip install matplotlib
 
- 
+
+# 2. AirSim Setup
+
+## Step 1 — Install Unreal Engine 4.27
+Install UE 4.27 via Epic Games Launcher.
+
+## Step 2 — Download AirSim
+```bash
+git clone https://github.com/microsoft/AirSim.git
+
+
+## Step 3 - Open the simulation environment:
+```bash
+AirSim/Unreal/Environments/Blocks/Blocks.uproject
+
+
+# 3. AirSim Settings Configuration
+
+
+```bash
+Documents/AirSim/settings.json
+```bash
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ClockSpeed": 20.0,
+  "Vehicles": {
+    "drone1": {
+      "VehicleType": "SimpleFlight",
+      "AutoCreate": true,
+      "Cameras": {
+        "front_center": {
+          "CaptureSettings": [
+            {
+              "ImageType": 0,
+              "Width": 50,
+              "Height": 50
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+# 4. Repository Structure
+```bash
+PPO-Drone-Navigation/
+│
+├── main.py                     # Training script
+├── policy_run.py               # Testing/inference script
+│
+├── scripts/
+│   ├── airsim_env.py           # Custom AirSim RL environment
+│   ├── client.py               # AirSim API wrapper
+│   ├── utils.py
+│   └── config.yml              # Environment configuration
+│
+├── models/
+│   └── best_model.zip          # Saved PPO model
+│
+├── logs/
+│   ├── tb_logs/                # TensorBoard logs
+│   ├── training_results.txt
+│   └── testing_results.txt
+│
+├── figures/                    # All 14 training plots
+│   ├── train_entropy_loss.png
+│   ├── train_clip_fraction.png
+│   └── ... (remaining plots)
+│
+└── videos/
+    └── demo.mp4                # Navigation demo video
+
+# 5. Training the PPO Agent
+```bash
+python main.py
+```bash
+models/best_model.zip
+
+# 6. Testing PPO Policy
+## Step 1 — Open Unreal Engine → Blocks → Play
+## Step 2 — Run:
+```bash
+python policy_run.py
+
+7. TensorBoard Visualization
+```bash
+tensorboard --logdir logs/tb_logs
+
+/figures
+
+
+
+
+
