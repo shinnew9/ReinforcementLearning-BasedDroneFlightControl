@@ -1,4 +1,4 @@
-# End-to-End Reinforcement Learning for Autonomous UAV Flight Using RGB Images
+# Vision-Based Reinforcement Learning for Autonomous Drone Navigation in AirSim
 
 This project implements a **vision-based reinforcement learning** system for autonomous drone navigation inside **Microsoft AirSim**.  
 The drone receives *only* **50×50×3 RGB images** from its front camera and must learn to:
@@ -37,3 +37,13 @@ Download: https://www.anaconda.com/products/distribution
 ```bash
 conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
+
+## Step 3 - Install dependencies
+pip install airsim
+pip install stable-baselines3[extra]
+pip install torch torchvision torchaudio
+pip install opencv-python
+pip install tensorboard
+pip install matplotlib
+
+ 
