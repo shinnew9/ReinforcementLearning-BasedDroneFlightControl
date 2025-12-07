@@ -138,6 +138,50 @@ python policy_run.py
 tensorboard --logdir logs/tb_logs
 
 Images/
+## PPO Training Plots (All 14 Metrics)
+
+### **Entropy Loss**
+![Entropy Loss](https://github.com/<username>/<repo>/blob/main/entropy_loss.jpg?raw=true)
+
+### **KL Divergence**
+![KL Divergence](https://github.com/<username>/<repo>/blob/main/kl_divergence.jpg?raw=true)
+
+### **Value Loss**
+![Value Loss](https://github.com/<username>/<repo>/blob/main/value_loss.jpg?raw=true)
+
+### **Policy Loss**
+![Policy Loss](https://github.com/<username>/<repo>/blob/main/policy_loss.jpg?raw=true)
+
+### **Total Loss**
+![Total Loss](https://github.com/<username>/<repo>/blob/main/total_loss.jpg?raw=true)
+
+### **Clip Fraction**
+![Clip Fraction](https://github.com/<username>/<repo>/blob/main/clip_fraction.jpg?raw=true)
+
+### **Training Reward**
+![Training Reward](https://github.com/<username>/<repo>/blob/main/training_reward.jpg?raw=true)
+
+### **Training Episode Length**
+![Episode Length](https://github.com/<username>/<repo>/blob/main/episode_length.jpg?raw=true)
+
+### **Evaluation Reward**
+![Eval Reward](https://github.com/<username>/<repo>/blob/main/eval_reward.jpg?raw=true)
+
+### **Evaluation Episode Length**
+![Eval Length](https://github.com/<username>/<repo>/blob/main/eval_length.jpg?raw=true)
+
+### **Learning Rate**
+![Learning Rate](https://github.com/<username>/<repo>/blob/main/learning_rate.jpg?raw=true)
+
+### **FPS**
+![FPS](https://github.com/<username>/<repo>/blob/main/fps.jpg?raw=true)
+
+### **Advantage Estimates**
+![Advantage Estimates](https://github.com/<username>/<repo>/blob/main/advantages.jpg?raw=true)
+
+### **Loss Components (Combined)**
+![Loss Combined](https://github.com/<username>/<repo>/blob/main/loss_combined.jpg?raw=true)
+
 
 
 Videos/
