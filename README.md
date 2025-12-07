@@ -1,37 +1,39 @@
-This repository contains an implementation of Proximal Policy Optimization (PPO) for autonomous navigation in a corridor environment with a quadcopter. There are blocks having circular opening for the drone to go through for each 4 meters. The expectation is that the agent navigates through these openings without colliding with blocks. This project currently runs only on Windows since Unreal environments were packaged for Windows.
+# End-to-End Reinforcement Learning for Autonomous UAV Flight Using RGB Images
 
-## Libraries & Tools
-# 1.Unreal Engine 4
-# 2.Microsoft AirSim
+This project implements a **vision-based reinforcement learning** system for autonomous drone navigation inside **Microsoft AirSim**.  
+The drone receives *only* **50×50×3 RGB images** from its front camera and must learn to:
 
-## Environment setup to run the codes
-# 1. Clone the repository 
+- Detect a wall opening  
+- Align itself to the center  
+- Move forward through the gap  
+- Avoid collisions  
 
-https://github.com/shinnew9/ReinforcementLearning-BasedDroneFlightControl
+No depth, LiDAR, IMU, GPS, semantic labels, or classical planning are used.  
+The system learns everything **end-to-end**:
 
+**Raw Pixels → CNN → PPO → Drone Actions**
 
-# 2.From Anaconda command prompt, create a new conda environment
+---
 
-I recommend you to use Anaconda or Miniconda to create a virtual environment.
+#  Key Features
 
-conda create -n ppo_drone python==3.8
+- **End-to-End RL**: learns navigation from vision only  
+- **PPO (Proximal Policy Optimization)** with CNN backbone  
+- **9-Action discrete controller** (up/down/left/right/diagonals/forward/hover)  
+- **Custom AirSim Gym-like environment**  
+- **Reward shaping** for alignment, progress & collision avoidance  
+- **14 TensorBoard diagnostic plots** for full PPO analysis  
+- Training + testing scripts with reproducible settings  
+- Entire project designed for research & report writing  
 
+---
 
-# 3.Install required libraries
+#  1. Installation
 
+## Step 1 — Install Anaconda
+Download: https://www.anaconda.com/products/distribution
+
+## Step 2 — Create and activate environment
+```bash
+conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
-
-pip install -r requirements.txt
-
-
-**How to run the pretrained model?**
-
-Make sure you followed the instructions above to setup the environment. To speed up the training, the simulation runs at 20x speed. You may consider to change the "ClockSpeed" parameter in settings.json to 1.
-
-# 1. Download the test environment
-
-Go to the releases and download TestEnv.zip. After downloading completed, extract it.
-
-# 2. Now, you can open up environment's executable file and run the trained model
-
-python policy_run.py
