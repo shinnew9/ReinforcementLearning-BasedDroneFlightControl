@@ -136,15 +136,3 @@ python policy_run.py
 7. TensorBoard Visualization
 ```bash
 tensorboard --logdir logs/tb_logs
-
-Images/
-
-
-Videos/
-
-Results/
-
-
-
-
-
