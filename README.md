@@ -136,3 +136,24 @@ python policy_run.py
 7. TensorBoard Visualization
 ```bash
 tensorboard --logdir logs/tb_logs
+```
+
+
+
+# 3. How Training Works
+
+The PPO agent interacts with the AirSim Blocks environment through a Gym-like API:
+
+1. Capture 50×50×3 RGB frame from `/front_center` camera  
+2. Preprocess and send observation to PPO  
+3. PPO chooses one of 9 discrete velocity actions  
+4. AirSim updates the drone position  
+5. Environment computes reward:
+   - Alignment score  
+   - Forward progress  
+   - Collision penalty  
+6. PPO updates the actor–critic networks every 2048 steps  
+
+All training diagnostics (KL, entropy, clip fraction, explained variance, etc.)  
+are automatically logged in **TensorBoard**.
+
