@@ -143,17 +143,17 @@ models/best_model.zip
 ### Step 7 - Testing PPO Policy
 
 <br>
-1.
+#### 1.
 Open Unreal Engine → Blocks → Play
 
-<br>
-2. Run:
+
+#### 2. Run:
 ```bash
 python policy_run.py
 ```
 
-<br>
-3. TensorBoard Visualization
+
+#### 3. TensorBoard Visualization
 ```bash
 tensorboard --logdir logs/tb_logs
 ```
@@ -202,7 +202,6 @@ Airsim Drone Motion
 
 
 # 5. Results
-
 ## 5.1 Episode Length
 - Converges to ~4–5 steps
 - Drone achieves basic short-range stability
@@ -222,7 +221,6 @@ All training plots are in `figures/`.
 
 
 # 6. Demo Video
-
 Watch the trained drone policy navigating through wall openings:
 
 ![134464002-08cbab61-999c-461c-9098-befd0ff0f779](https://github.com/user-attachments/assets/4a799e09-bb4a-455e-8847-b143b3304837)
@@ -234,8 +232,8 @@ The agent reliably performs:
 
 While long-horizon pixel-only navigation remains difficult, this experiment demonstrates that PPO can learn meaningful visuomotor behavior from extremely limited visual input.
 
-# 7. Results (Conclusions) 
 
+# 7. Results (Conclusions) 
 Overall, the agent completed 150,000 timesteps of PPO training with periodic evaluation every 500 steps.
 
 Across training, the model achieved: 
@@ -248,7 +246,6 @@ Across training, the model achieved:
 
 
 # 8. Limitations & Future Work
-
 ### Limitations
 - No temporal modeling (agent sees only one frame at a time)
 - Low-resolution 50×50 images reduce spatial precision
