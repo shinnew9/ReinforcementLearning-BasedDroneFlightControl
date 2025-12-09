@@ -29,8 +29,8 @@ The system learns everything **end-to-end**:
 ---
 
 
-#  1. Installation
-<br>
+#  1. Installation <br>
+
 ### Step 1 — Install Anaconda
 Download: https://www.anaconda.com/products/distribution
 <br>
