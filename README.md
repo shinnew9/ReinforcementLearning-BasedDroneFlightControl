@@ -98,39 +98,39 @@ Documents/AirSim/settings.json
 
 ### Step 5 - Repository Structure
 ```bash
-PPO-Drone-Navigation/
-│
-├── main.py                     # Training script
-├── policy_run.py               # Testing/inference script
-├── requirements.txt            # required packages to be installed
-├── settings.json               # settings before running the pilcy_run.py
-│
-├── scripts/
-│   ├── airsim/
-│         ├── __init__.py
-│         ├── client.py
-│         ├── pfm.py
-│         ├── types.py
-│         ├── utils.py
-│   ├── __init__.py
-│   ├── airsim_env.py           # Custom AirSim RL environment
-│   ├── client.py               # AirSim API wrapper
-│   ├── utils.py
-│   └── config.yml              # Environment configuration
-│
-├── models/
-│   └── best_model.zip          # Saved PPO model, will be uploaded soon
-│
-├── logs/
-│   ├── tb_logs/                # TensorBoard logs, will be uploaded soon
-│   ├── training_results.txt
-│   └── testing_results.txt
-│
-├── figures/                    # All 15 training plots
-│   ├── train_entropy_loss.png
-│   ├── train_clip_fraction.png
-│   └── ... (remaining plots)
-└── 
+  PPO-Drone-Navigation/
+  │
+  ├── main.py                     # Training script
+  ├── policy_run.py               # Testing/inference script
+  ├── requirements.txt            # required packages to be installed
+  ├── settings.json               # settings before running the pilcy_run.py
+  │
+  ├── scripts/
+  │   ├── airsim/
+  │         ├── __init__.py
+  │         ├── client.py
+  │         ├── pfm.py
+  │         ├── types.py
+  │         ├── utils.py
+  │   ├── __init__.py
+  │   ├── airsim_env.py           # Custom AirSim RL environment
+  │   ├── client.py               # AirSim API wrapper
+  │   ├── utils.py
+  │   └── config.yml              # Environment configuration
+  │
+  ├── models/
+  │   └── best_model.zip          # Saved PPO model, will be uploaded soon
+  │
+  ├── logs/
+  │   ├── tb_logs/                # TensorBoard logs, will be uploaded soon
+  │   ├── training_results.txt
+  │   └── testing_results.txt
+  │
+  ├── figures/                    # All 15 training plots
+  │   ├── train_entropy_loss.png
+  │   ├── train_clip_fraction.png
+  │   └── ... (remaining plots)
+  └── 
 ```
 
 ### Step 6 - Training the PPO Agent
