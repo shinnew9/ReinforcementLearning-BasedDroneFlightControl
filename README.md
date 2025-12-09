@@ -30,15 +30,17 @@ The system learns everything **end-to-end**:
 
 
 #  1. Installation
-
+<br>
 ### Step 1 — Install Anaconda
 Download: https://www.anaconda.com/products/distribution
+<br>
 
 ### Step 2 — Create and activate environment
 ```bash
 conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
 ```
+<br>
 
 ### Step 3 - Install dependencies
 ```bash
@@ -49,6 +51,7 @@ pip install opencv-python
 pip install tensorboard
 pip install matplotlib
 ```
+<br>
 
 # 2. AirSim Setup
 
