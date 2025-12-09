@@ -68,7 +68,7 @@ git clone https://github.com/microsoft/AirSim.git
 AirSim/Unreal/Environments/Blocks/Blocks.uproject
 ```
 
-### Step 4 - AirSim Settings Configuration
+### Step 4 - AirSim Settings Configuration  -- need to be fixed (bash)
 ```bash
 Documents/AirSim/settings.json
 ```bash
@@ -133,9 +133,11 @@ Documents/AirSim/settings.json
   └── 
 ```
 
-### Step 6 - Training the PPO Agent
+### Step 6 - Training the PPO Agent  -- need to be fixed (bash)
 ```bash
 python main.py
+```
+
 ```bash
 models/best_model.zip
 ```
