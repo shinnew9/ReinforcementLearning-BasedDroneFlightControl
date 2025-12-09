@@ -142,8 +142,7 @@ models/best_model.zip
 
 ### Step 7 - Testing PPO Policy
 
-#### 1.
-Open Unreal Engine → Blocks → Play
+#### 1. Open Unreal Engine → Blocks → Play
 
 
 #### 2. Run:
