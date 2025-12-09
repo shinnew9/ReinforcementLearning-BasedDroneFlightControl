@@ -40,7 +40,6 @@ Download: https://www.anaconda.com/products/distribution
 conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
 ```
-<br>
 
 ### Step 3 - Install dependencies
 ```bash
