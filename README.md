@@ -69,8 +69,8 @@ AirSim/Unreal/Environments/Blocks/Blocks.uproject
 ```
 
 ### Step 4 - AirSim Settings Configuration  -- need to be fixed (bash)
-```bash
 Documents/AirSim/settings.json
+
 ```bash
 {
   "SettingsVersion": 1.2,
@@ -133,7 +133,7 @@ Documents/AirSim/settings.json
   └── 
 ```
 
-### Step 6 - Training the PPO Agent  -- need to be fixed (bash)
+### Step 6 - Training the PPO Agent
 ```bash
 python main.py
 ```
