@@ -127,7 +127,6 @@ PPO-Drone-Navigation/
 │   ├── train_entropy_loss.png
 │   ├── train_clip_fraction.png
 │   └── ... (remaining plots)
-│
 └── 
 
 # 5. Training the PPO Agent
