@@ -99,8 +99,17 @@ PPO-Drone-Navigation/
 │
 ├── main.py                     # Training script
 ├── policy_run.py               # Testing/inference script
+├── requirements.txt            # required packages to be installed
+├── settings.json               # settings before running the pilcy_run.py
 │
 ├── scripts/
+│   ├── airsim/
+│         ├── __init__.py
+│         ├── client.py
+│         ├── pfm.py
+│         ├── types.py
+│         ├── utils.py
+│   ├── __init__.py
 │   ├── airsim_env.py           # Custom AirSim RL environment
 │   ├── client.py               # AirSim API wrapper
 │   ├── utils.py
@@ -114,7 +123,7 @@ PPO-Drone-Navigation/
 │   ├── training_results.txt
 │   └── testing_results.txt
 │
-├── figures/                    # All 14 training plots
+├── figures/                    # All 15 training plots
 │   ├── train_entropy_loss.png
 │   ├── train_clip_fraction.png
 │   └── ... (remaining plots)
@@ -214,22 +223,17 @@ The agent reliably performs:
 
 While long-horizon pixel-only navigation remains difficult, this experiment demonstrates that PPO can learn meaningful visuomotor behavior from extremely limited visual input.
 
-# 7. Results 
+# 7. Results (Conclusions) 
 
 Overall, the agent completed 150,000 timesteps of PPO training with periodic evaluation every 500 steps.
+
 Across training, the model achieved: 
-
-Across 150k timesteps, the agent demonstrated clear learning progress, with evaluation rewards rising above +120 at multiple checkpoints, indicating successful hole traversal and improved navigation performance.
-
-Improved alignment behavior
-
-More stable forward motion
-
-Intermittent successful passes through the opening
-
-Higher rewards toward later training iterations
-
-Although performance fluctuated due to noisy visual input, the PPO agent was able to learn meaningful visuomotor control policies.
+- Across 150k timesteps, the agent demonstrated clear learning progress, with evaluation rewards rising above +120 at multiple checkpoints, indicating successful hole traversal and improved navigation performance.
+- Improved alignment behavior
+- More stable forward motion
+- Intermittent successful passes through the opening
+- Higher rewards toward later training iterations
+- Although performance fluctuated due to noisy visual input, the PPO agent was able to learn meaningful visuomotor control policies.
 
 
 # 8. Limitations & Future Work
