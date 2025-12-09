@@ -38,6 +38,7 @@ Download: https://www.anaconda.com/products/distribution
 ```bash
 conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
+```
 
 ## Step 3 - Install dependencies
 ```bash
@@ -47,7 +48,7 @@ pip install torch torchvision torchaudio
 pip install opencv-python
 pip install tensorboard
 pip install matplotlib
-
+```
 
 # 2. AirSim Setup
 
@@ -57,16 +58,14 @@ Install UE 4.27 via Epic Games Launcher.
 ## Step 2 — Download AirSim
 ```bash
 git clone https://github.com/microsoft/AirSim.git
-
+```
 
 ## Step 3 - Open the simulation environment:
 ```bash
 AirSim/Unreal/Environments/Blocks/Blocks.uproject
-
+```
 
 # 3. AirSim Settings Configuration
-
-
 ```bash
 Documents/AirSim/settings.json
 ```bash
@@ -92,6 +91,7 @@ Documents/AirSim/settings.json
     }
   }
 }
+```
 
 # 4. Repository Structure
 ```bash
@@ -128,18 +128,21 @@ PPO-Drone-Navigation/
 │   ├── train_clip_fraction.png
 │   └── ... (remaining plots)
 └── 
+```
 
 # 5. Training the PPO Agent
 ```bash
 python main.py
 ```bash
 models/best_model.zip
+```
 
 # 6. Testing PPO Policy
 ## Step 1 — Open Unreal Engine → Blocks → Play
 ## Step 2 — Run:
 ```bash
 python policy_run.py
+```
 
 7. TensorBoard Visualization
 ```bash
