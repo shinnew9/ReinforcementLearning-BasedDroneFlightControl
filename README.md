@@ -31,16 +31,16 @@ The system learns everything **end-to-end**:
 
 #  1. Installation
 
-## Step 1 — Install Anaconda
+### Step 1 — Install Anaconda
 Download: https://www.anaconda.com/products/distribution
 
-## Step 2 — Create and activate environment
+### Step 2 — Create and activate environment
 ```bash
 conda create -n ppo_drone python=3.8 -y
 conda activate ppo_drone
 ```
 
-## Step 3 - Install dependencies
+### Step 3 - Install dependencies
 ```bash
 pip install airsim
 pip install stable-baselines3[extra]
@@ -52,15 +52,15 @@ pip install matplotlib
 
 # 2. AirSim Setup
 
-## Step 1 — Install Unreal Engine 4.27
+### Step 1 — Install Unreal Engine 4.27
 Install UE 4.27 via Epic Games Launcher.
 
-## Step 2 — Download AirSim
+### Step 2 — Download AirSim
 ```bash
 git clone https://github.com/microsoft/AirSim.git
 ```
 
-## Step 3 - Open the simulation environment:
+### Step 3 - Open the simulation environment:
 ```bash
 AirSim/Unreal/Environments/Blocks/Blocks.uproject
 ```
@@ -138,8 +138,8 @@ models/best_model.zip
 ```
 
 # 6. Testing PPO Policy
-## Step 1 — Open Unreal Engine → Blocks → Play
-## Step 2 — Run:
+### Step 1 — Open Unreal Engine → Blocks → Play
+### Step 2 — Run:
 ```bash
 python policy_run.py
 ```
