@@ -65,7 +65,7 @@ git clone https://github.com/microsoft/AirSim.git
 AirSim/Unreal/Environments/Blocks/Blocks.uproject
 ```
 
-# 3. AirSim Settings Configuration
+### Step 4 - AirSim Settings Configuration
 ```bash
 Documents/AirSim/settings.json
 ```bash
@@ -93,7 +93,7 @@ Documents/AirSim/settings.json
 }
 ```
 
-# 4. Repository Structure
+### Step 5 - Repository Structure
 ```bash
 PPO-Drone-Navigation/
 │
@@ -130,21 +130,24 @@ PPO-Drone-Navigation/
 └── 
 ```
 
-# 5. Training the PPO Agent
+### Step 6 - Training the PPO Agent
 ```bash
 python main.py
 ```bash
 models/best_model.zip
 ```
 
-# 6. Testing PPO Policy
-### Step 1 — Open Unreal Engine → Blocks → Play
-### Step 2 — Run:
+### Step 7 - Testing PPO Policy
+
+##### Step 1 
+Open Unreal Engine → Blocks → Play
+
+##### Step 2 — Run:
 ```bash
 python policy_run.py
 ```
 
-7. TensorBoard Visualization
+##### Step 3 - TensorBoard Visualization
 ```bash
 tensorboard --logdir logs/tb_logs
 ```
