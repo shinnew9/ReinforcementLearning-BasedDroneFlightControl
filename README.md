@@ -142,15 +142,18 @@ models/best_model.zip
 
 ### Step 7 - Testing PPO Policy
 
-##### Step 1 
+<br>
+1.
 Open Unreal Engine → Blocks → Play
 
-##### Step 2 — Run:
+<br>
+2. Run:
 ```bash
 python policy_run.py
 ```
 
-##### Step 3 - TensorBoard Visualization
+<br>
+3. TensorBoard Visualization
 ```bash
 tensorboard --logdir logs/tb_logs
 ```
