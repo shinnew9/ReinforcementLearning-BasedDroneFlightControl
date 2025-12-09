@@ -68,7 +68,7 @@ git clone https://github.com/microsoft/AirSim.git
 AirSim/Unreal/Environments/Blocks/Blocks.uproject
 ```
 
-### Step 4 - AirSim Settings Configuration  -- need to be fixed (bash)
+### Step 4 - AirSim Settings Configuration
 Documents/AirSim/settings.json
 
 ```bash
