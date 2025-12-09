@@ -107,10 +107,10 @@ PPO-Drone-Navigation/
 │   └── config.yml              # Environment configuration
 │
 ├── models/
-│   └── best_model.zip          # Saved PPO model
+│   └── best_model.zip          # Saved PPO model, will be uploaded soon
 │
 ├── logs/
-│   ├── tb_logs/                # TensorBoard logs
+│   ├── tb_logs/                # TensorBoard logs, will be uploaded soon
 │   ├── training_results.txt
 │   └── testing_results.txt
 │
@@ -119,8 +119,7 @@ PPO-Drone-Navigation/
 │   ├── train_clip_fraction.png
 │   └── ... (remaining plots)
 │
-└── videos/
-    └── demo.mp4                # Navigation demo video
+└── 
 
 # 5. Training the PPO Agent
 ```bash
@@ -250,3 +249,4 @@ Although performance fluctuated due to noisy visual input, the PPO agent was abl
 
 # Author 
 Santhoshi Karri
+Yoojin Shin
