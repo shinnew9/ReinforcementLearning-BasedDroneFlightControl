@@ -259,6 +259,6 @@ Across training, the model achieved:
 - Testing SAC, TD3, or Dreamer for improved sample efficiency  
 - Sim-to-real transfer on a physical quadrotor
 
-# Author 
+# Authors
 Santhoshi Karri <br>
 Yoojin Shin
