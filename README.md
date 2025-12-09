@@ -113,8 +113,6 @@ Documents/AirSim/settings.json
   │         ├── utils.py
   │   ├── __init__.py
   │   ├── airsim_env.py           # Custom AirSim RL environment
-  │   ├── client.py               # AirSim API wrapper
-  │   ├── utils.py
   │   └── config.yml              # Environment configuration
   │
   ├── models/
